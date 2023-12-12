@@ -2,7 +2,6 @@
 
 body {
 	background-color: bisque;
-	padding: 0;
 	margin: 0;
 	overflow-x: hidden;
 	font-family: 'Rubik', sans-serif;
@@ -29,13 +28,21 @@ nav {
 }
 
 main {
-	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 20px;
 	padding-top: 105px;
 }
-
+dialog {
+	width: 60vw;
+	border-radius: 10px;
+	border-color: bisque;
+	background: green;
+}
+dialog::backdrop {
+	background: rgba(0, 0, 255, 0.6);
+	backdrop-filter: blur(6px);
+}
 .header-text {
 	color: bisque;
 }
@@ -137,4 +144,7 @@ form > button:hover {
 	/* .para-text {
 		color: green;
 	} */
+	dialog {
+		width: 75vw;
+	}
 }
