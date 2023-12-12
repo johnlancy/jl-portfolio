@@ -25,6 +25,59 @@
 				magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat.
 			</p>
+			<dialog id="dialog1">
+				<p>Hello</p>
+				<button id="close">Close</button>
+			</dialog>
+			<dialog id="dialog2">
+				<p>Goodbye</p>
+				<button id="close2">Close!</button>
+			</dialog>
+			<!-- <button id="show">Show 1</button>
+			<button id="show2">Show 2</button> (BUTTON REF) -->
+			<div class="image-container">
+				<img
+					class="project-pic"
+					id="dog"
+					src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+					alt="Project File"
+				/>
+			</div>
 		</main>
 	</body>
+	<script>
+		// variables. declaring an identity. in this case getting documents, targeting by ID, saying this variable is this element
+		const firstDialog = document.getElementById('dialog1');
+		const secondDialog = document.getElementById('dialog2');
+		const close = document.getElementById('close');
+		const close2 = document.getElementById('close2');
+		// const firstButton = document.getElementById('show');
+		// const secondButton = document.getElementById('show2');
+		const dog = document.getElementById('dog');
+
+		// const cannot be redefined. Constant Variable
+		// let can be redefined. Ex. let sum = 0, now sum plus 1 should = 1
+
+		// let sum = 0;
+		// function addOne(sum) {
+		// 	let returnValue;
+		// 	returnValue = sum + 1;
+		// 	// returnValue = sum += 1; (add whatever you set)
+		// 	// returnValue = sum++ (adds one)
+
+		// 	return returnValue;
+		// }
+
+		dog.addEventListener('click', () => {
+			firstDialog.showModal();
+		});
+
+		close2.addEventListener('click', () => {
+			secondDialog.close();
+		});
+		
+		close.addEventListener('click', () => {
+			firstDialog.close();
+		});
+	</script>
 </html>
