@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-
+::selection {
+	background: rgba(27, 163, 95, 0.7);
+}
+::-moz-selection {
+	background: rgba(27, 163, 95, 0.7);
+}
 body {
 	background-color: rgb(41, 35, 27);
 	margin: 0;
@@ -16,6 +21,7 @@ header {
 	top: 0;
 	z-index: 100;
 	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 }
 
 nav {
@@ -38,11 +44,14 @@ dialog {
 	border-style: solid;
 	border-radius: 10px;
 	border-color: rgb(0, 65, 32);
-	background: bisque;
+	background: rgb(44, 33, 9);
+	background-image: url('/imgs/backgroundimage.png');
+	color: bisque;
 }
 dialog::backdrop {
 	background: rgba(44, 33, 9, 0.6);
 	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
 }
 .header-text {
 	color: bisque;
@@ -95,7 +104,47 @@ dialog::backdrop {
 .project-pic:hover {
 	scale: 1.2;
 }
-
+.martin-colors {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.projcolor-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.individual-color {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+}
+.color-swatch {
+	border: 2px solid bisque;
+	border-radius: 5px;
+	height: 30px;
+	width: 30px;
+}
+.title-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.close-button {
+	border: none;
+	color: rgba(27, 163, 95, 0.7);
+	background: transparent;
+	outline: none;
+	font-size: 25px;
+	cursor: pointer;
+	transition: all 200ms ease-in-out;
+	user-select: none;
+}
+.close-button:hover {
+	color: rgba(47, 233, 140, 0.7);
+}
 form {
 	margin-top: 30px;
 	padding: 20px;
