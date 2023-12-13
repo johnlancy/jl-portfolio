@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 body {
-	background-color: bisque;
+	background-color: rgb(41, 35, 27);
 	margin: 0;
 	overflow-x: hidden;
 	font-family: 'Rubik', sans-serif;
@@ -9,7 +9,7 @@ body {
 }
 
 header {
-	background-color: rgba(0, 65, 32, 0.7);
+	background-color: rgba(27, 163, 95, 0.7);
 	width: 100%;
 	padding: 20px;
 	position: fixed;
@@ -35,12 +35,13 @@ main {
 }
 dialog {
 	width: 60vw;
+	border-style: solid;
 	border-radius: 10px;
-	border-color: bisque;
-	background: green;
+	border-color: rgb(0, 65, 32);
+	background: bisque;
 }
 dialog::backdrop {
-	background: rgba(0, 0, 255, 0.6);
+	background: rgba(44, 33, 9, 0.6);
 	backdrop-filter: blur(6px);
 }
 .header-text {
@@ -48,7 +49,7 @@ dialog::backdrop {
 }
 
 .para-text {
-	color: black;
+	color: bisque;
 }
 
 .header-logo {
@@ -85,7 +86,7 @@ dialog::backdrop {
 	flex-direction: column;
 }
 .project-pic {
-	width: 228px;
+	width: 50%;
 	height: auto;
 	transition: all 300ms ease-in-out;
 	margin: 0 auto;

@@ -18,15 +18,30 @@
 			</nav>
 		</header>
 		<main>
-			<p class="para-text">Hello world! This is my first portfolio ever!</p>
-			<p class="para-text">This is a test paragraph for positioning purposes.</p>
+			<p class="para-text">Below is a recent selection of projects by John Lancy.</p>
+			<p class="para-text">For more information about each project select the image to read the related case study.</p>
 			<p class="para-text">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-				magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.
+				If you would like to work with John to design for your business, please contact John to discuss your project.
 			</p>
-			<dialog id="dialog1" class="dog-dialog">
-				<p>Hello</p>
+			<dialog id="dialog1" class="martin-dialog">
+				<p>Martin Electric</p>
+				<p>
+					A family-owned and operated business for 20+ years. Located in the the Maryland DC Virgina Metropolitan Area.
+				</p>
+				<p>
+					Martin Electric takes pride in being a part of the communities they serve. Beyond providing great electrical
+					services, the company actively engages in community initiatives and supports local events. This
+					community-centric approach made it clear that it was a excellent choice for JLX to work with Martin Electric.
+				</p>
+				<p>
+					JLX proudly redesigned their brand. We picked a colorway that looks electric while also maintaining class. The
+					copper orange for conduction, and a steel gray for grounding. color 5c3d00 & color 22211f
+				</p>
+				<p>
+					A glowing lightbulb, representing illumination and ideas, worked seamlessly with the company's name. This
+					clever integration captures the essence of Martin Electric, a light of professionalism and reliability in the
+					electrical services industry, dedicated to brightening spaces and lives.
+				</p>
 				<button id="close">Close</button>
 			</dialog>
 			<dialog id="dialog2">
@@ -36,12 +51,7 @@
 			<!-- <button id="show">Show 1</button>
 			<button id="show2">Show 2</button> (BUTTON REF) -->
 			<div class="image-container">
-				<img
-					class="project-pic"
-					id="dog"
-					src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
-					alt="Project File"
-				/>
+				<img class="project-pic" id="martin-electric" src="./imgs/martin-electric.png" alt="Project File" />
 			</div>
 		</main>
 	</body>
@@ -53,7 +63,7 @@
 		const close2 = document.getElementById('close2');
 		// const firstButton = document.getElementById('show');
 		// const secondButton = document.getElementById('show2');
-		const dog = document.getElementById('dog');
+		const martin = document.getElementById('martin-electric');
 
 		// const cannot be redefined. Constant Variable
 		// let can be redefined. Ex. let sum = 0, now sum plus 1 should = 1
@@ -68,7 +78,7 @@
 		// 	return returnValue;
 		// }
 
-		dog.addEventListener('click', () => {
+		martin.addEventListener('click', () => {
 			firstDialog.showModal();
 		});
 
