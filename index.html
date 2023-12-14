@@ -55,15 +55,36 @@
 					clever integration captures the essence of Martin Electric, a light of professionalism and reliability in the
 					electrical services industry, dedicated to brightening spaces and lives.
 				</p>
+				<div class="company-logo">
+					<img class="martin-logo" src="/imgs/maelec-logo.png" alt="MELogo" />
+					<img class="martin-mockup" src="/imgs/mevanmockup.png" alt="MELogo" />
+				</div>
+				<p>Martin Electric Logo description</p>
 			</dialog>
-			<dialog id="dialog2">
-				<p>Goodbye</p>
-				<button id="close2">Close!</button>
+
+			<dialog id="dialog2" class="liv-dialog">
+				<div class="title-container">
+					<h2>LIV CBD</h2>
+					<button id="close2" class="close-button">X</button>
+				</div>
+				<p>LIV CBD bio</p>
+				<div class="projcolor-container">
+					<div class="individual-color">
+						<div style="background: #ff4800" class="color-swatch"></div>
+						<p>#ff4800</p>
+					</div>
+					<div class="individual-color">
+						<div style="background: #8f8f8f" class="color-swatch"></div>
+						<p>#8f8f8f</p>
+					</div>
+				</div>
+				<p>more info about logo design</p>
 			</dialog>
 			<!-- <button id="show">Show 1</button>
 			<button id="show2">Show 2</button> (BUTTON REF) -->
 			<div class="image-container">
 				<img class="project-pic" id="martin-electric" src="./imgs/martin-electric.png" alt="Project File" />
+				<img class="project-pic" id="liv-cbd" src="./imgs/livdropper.png" alt="Project File" />
 			</div>
 		</main>
 	</body>
@@ -76,6 +97,7 @@
 		// const firstButton = document.getElementById('show');
 		// const secondButton = document.getElementById('show2');
 		const martin = document.getElementById('martin-electric');
+		const liv = document.getElementById('liv-cbd');
 
 		// const cannot be redefined. Constant Variable
 		// let can be redefined. Ex. let sum = 0, now sum plus 1 should = 1
@@ -92,6 +114,10 @@
 
 		martin.addEventListener('click', () => {
 			firstDialog.showModal();
+		});
+
+		liv.addEventListener('click', () => {
+			secondDialog.showModal();
 		});
 
 		close2.addEventListener('click', () => {
