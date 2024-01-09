@@ -170,6 +170,10 @@ form {
 	border-radius: 10px;
 }
 
+form > label {
+	color: bisque;
+}
+
 form > input {
 	outline: none;
 	padding: 8px 12px;
